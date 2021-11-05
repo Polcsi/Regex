@@ -35,7 +35,9 @@ class Formats:
             return False
         else:
             if method == "add": func(idx=0, key=None, value=None)
-            if method == "remove": print("Format list is empty!")
+            if method == "remove":
+                print("Format list is empty!")
+                return False
             return True
         
     def __check(self):
